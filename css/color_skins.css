@@ -1,0 +1,48 @@
+
+
+
+.theme-green .menu>ul>li>ul.normal-sub>li a:hover,.theme-green .menu>ul>li>ul>li>ul>li a:hover{background-color:#5cdb94}.theme-green.sidebar-collapse .navbar-collapse:before{background-color:#50d38a}.theme-green .btn-primary{background:#50d38a}.theme-green .btn-primary:active,.theme-green .btn-primary:hover,.theme-green .btn-primary:focus{background:#5cdb94}.theme-green .btn-primary.btn-simple{border-color:#50d38a;color:#50d38a;background:transparent}.theme-green .block-header h2{color:#fff}.theme-green .block-header h2 small{color:#fff}.theme-green section.content:before{background-color:#5cdb94}.theme-green .navbar,.theme-green .page-loader-wrapper{background:#5cdb94}.theme-green .bars{color:#fff}.theme-green .sidebar .menu .list li.active{background-color:transparent}.theme-green .sidebar .menu .list li.active>:first-child i,.theme-green .sidebar .menu .list li.active>:first-child span{color:#50d38a}.theme-green .sidebar .menu .list a:hover{color:#50d38a}.theme-green .checkbox input[type="checkbox"]:checked+label::after{border:1px solid #50d38a}.theme-green .nav-tabs .nav-link.active{border:1px solid #50d38a !important;background-color: transparent !important;}.theme-green .card .header h2:before{background:#50d38a}.theme-green .card .header h2 strong{color:#50d38a}
+
+
+/* Animation */
+@-webkit-keyframes rotate {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  /* Variables */
+  /* Loading Icon */
+  .loading {
+    width: 100px;
+    height: 100px;
+  }
+  .loading__ring {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  .loading__ring:first-child {
+    -webkit-transform: skew(30deg, 20deg);
+            transform: skew(30deg, 20deg);
+  }
+  .loading__ring:last-child {
+    -webkit-transform: skew(-30deg, -20deg) scale(-1, 1);
+            transform: skew(-30deg, -20deg) scale(-1, 1);
+  }
+  .loading__ring:last-child svg {
+    -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+  }
+  .loading__ring svg {
+    -webkit-animation: rotate 1s linear infinite;
+    animation: rotate 1s linear infinite;
+    fill: rgb(251, 250, 250);
+  }
+  

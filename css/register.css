@@ -1,0 +1,365 @@
+
+
+
+/* ==========================================================================
+   #PAGE WRAPPER
+   ========================================================================== */
+
+
+
+
+
+
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+.wrapper {
+  position: relative;
+  margin: 20% auto 20% auto;
+}
+
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+input,
+textarea {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  color: #0083B0;
+  float: right;
+}
+
+
+
+.input-group {
+  position: relative;
+  max-width: 593px;
+  margin: 0 auto;
+}
+
+.input--style-1 {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #666;
+  text-align: right;
+}
+
+.input--style-1::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #999;
+}
+
+.input--style-1:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+  opacity: 1;
+}
+
+.input--style-1::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+  opacity: 1;
+}
+
+.input--style-1:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999;
+}
+
+.input--style-1:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #999;
+}
+
+.btn--next{
+  line-height: 50px;
+  background: #9edbfe;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #75b4fc, #9edbfe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #75b4fc, #9edbfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0 30px;
+  -webkit-border-top-right-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  border-top-right-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-bottomright: 25px;
+  border-bottom-right-radius: 25px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  bottom: -25%;
+  right: 20px;
+}
+
+.left-btn {
+ border-radius: 25px 0 0 25px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  bottom: -25%;
+  left: 20px;
+  line-height: 50px;
+  background: #9edbfe;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #75b4fc, #9edbfe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #75b4fc, #9edbfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0 30px;
+ 
+}
+
+
+.form {
+  padding: 0 15px;
+}
+
+label.error {
+  display: block;
+  color: red;
+  padding: 3px 30px;
+}
+
+a.left-btn :focus,a.left-btn :visited{
+  color: #fff !important;
+  cursor:  pointer;
+}
+
+/* ==========================================================================
+   #TAB
+   ========================================================================== */
+.tab-list {
+  list-style: none;
+  text-align: center;
+  /*! padding: 25px 0; */
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #ecf1fe;
+ width: 100%;
+}
+
+.tab-list__item {
+  display: inline-block;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 33%;
+  /*! padding: 0 7px; */
+}
+
+@media (max-width: 767px) {
+  .tab-list__item {
+    display: inline-block;
+ 
+  }
+}
+
+@media (min-width: 768px) {
+  .tab-list__item {
+   width: 30%;
+ 
+  }
+}
+.tab-list__link {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0083B0;
+  display: inline-block;
+  -webkit-border-radius: 22.5px;
+  -moz-border-radius: 22.5px;
+  border-radius: 5px 30px 30px 0;
+  padding: 10px 0  ;
+width: 100%;
+  text-align: center;
+}
+.tab-list__link:hover,.tab-list__link:visited,.tab-list__link:focus{
+  color: #0083B0;
+  cursor: default;
+}
+
+
+.tab-list__link .step {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #bdc7e8;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.tab-list__link .desc {
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.tab-list .active .tab-list__link {
+  background: #9edbfe;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #75b4fc, #9edbfe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #75b4fc, #9edbfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  box-shadow: 8px 2px 10px #0088b552;
+  
+}
+
+.tab-list .active .tab-list__link .step {
+  color: #9edbfe;
+  background-color: #fff;
+}
+.tab-content {
+  background-image: url('../images/map.png');
+  background-size: cover;
+  min-height: 250px;
+}
+.tab-content > .tab-pane {
+  display: none;
+  padding: 35px 50px;
+  padding-bottom: 43px;
+ 
+}
+
+.tab-content > .tab-pane.active {
+  display: block;
+}
+
+/* ==========================================================================
+   #TITLE
+   ========================================================================== */
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #458dc1;
+  margin: 24px 0;
+}
+
+/* ==========================================================================
+   #CARD
+   ========================================================================== */
+.card {
+border: none;
+}
+
+
+
+.card-1 .card-body {
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+}
+
+
+/*************/
+.reg,.log,.forgot-pass{
+  margin: 15% auto;
+  text-align: right;
+  direction: rtl;
+}
+
+
+.bg-register-image {
+  background: url(../images/login&registration/form-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-login-image {
+  background: url(../images/login&registration/form-img3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+.bg-password-image{
+  background: url(../images/login&registration/form-img2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-register-image-vendor {
+  background: url(../images/login&registration/vendor.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+
+  
+.btn-google{
+  background-color: #ea4335;
+  color: #fff;
+  
+}
+.btn-facebook{
+  background-color: #3b5998;
+  color: #fff;
+}
+.btn-google:hover,.btn-facebook:hover{
+  color: #fff !important;
+  
+}
+.reg a {
+  border-radius: 20px;
+}
+.reg input ,.log input,.forgot-pass input {
+  border-radius: 20px;
+  text-align: right;
+}
+textarea{
+  resize: none;
+}
+.custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #44ce6f;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+.custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+
+}

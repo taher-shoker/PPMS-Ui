@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+    <!-- Main Meta Rulez-->
+    <meta charset="UTF-8" />
+    <title></title>
+
+    <!--IE Compatibility Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- First Mobile Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main Bootstrap Style File-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+
+
+
+    <!-- Font Icon Library-->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/all.css" />
+
+    <!-- Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'>
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+    <!--Favicon style -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Animation File-->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Main Css Style File-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Main Css Style File-->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- Main Css Style File-->
+    <link rel="stylesheet" href="./css/register.css" />
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"/></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+
+</head>
+
+<body>
+    <!-- Start Section Header-->
+    <header id="header">
+        <div class="startp-mobile-nav">
+            <div class="logo">
+                <a href="#"><img src="./images/logo/logo.png" alt="logo" style="width:145px;height:90px"></a>
+            </div>
+        </div>
+        <!-- Start Navbar Area -->
+        <div class="startp-nav">
+            <div class="container">
+
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="#"><img src="./images/logo/logo.png" alt="logo"
+                            style="width:127px;height:69px"></a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav ml-auto">
+
+                            <li class="nav-item"><a href="index.html" class="nav-link active">الرئيسية</a> </li>
+
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">الخدمات<i
+                                        data-feather="chevron-down"></i></a>
+                                <ul class="dropdown_menu">
+                                    <li class="nav-item"><a target="_blank" href="#"
+                                            class="nav-link">نظام الدفع</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link">اشتراكات</a>
+                                    </li>
+                                    <!--  <li class="nav-item"><a target="_blank" href="http://xoomhr.com/" class="nav-link">HR & PAYROLL</a></li>
+                                    <li class="nav-item"><a target="_blank" href="https://xoomsales.com/" class="nav-link">ENROLMENTS</a></li> -->
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">الاحصائيات <i
+                                        data-feather="chevron-down"></i></a>
+                                <ul class="dropdown_menu">
+                                    <li class="nav-item"><a href="#" class="nav-link">الاعضاء المشتركين</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">العمليات
+                                            الناجحة</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">الشركة <i
+                                        data-feather="chevron-down"></i></a>
+                                <ul class="dropdown_menu">
+                                    <li class="nav-item"><a href="#" class="nav-link">معلومات عن</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">اتصل بنا</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="others-option">
+                        <a href="registration.html" class="btn btn-light">تسجيل الدخول</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End Navbar Area -->
+    <!-- End Section Header-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-wrapper bg-img-1 p-t-275 p-b-100">
+                    <div class="wrapper wrapper--w820">
+                        <div class="card card-1">
+                            <div class="card-heading">
+                                <h2 class="title">إنشاء حساب جديد</h2>
+                            </div>
+                            <div class="card-body">
+                                <form class="wizard-container" method="POST" action="#" id="js-wizard-form">
+                                    <ul class="tab-list">
+                                        <li class="tab-list__item active">
+                                            <a class="tab-list__link" href="#tab1" data-toggle="tab">
+                                                <span class="step">1</span>
+                                                <span class="desc">بيانات شخصية</span>
+                                            </a>
+                                        </li>
+                                        <li class="tab-list__item">
+                                            <a class="tab-list__link" href="#tab2" data-toggle="tab">
+                                                <span class="step">2</span>
+                                                <span class="desc">بيانات عامة</span>
+                                            </a>
+                                        </li>
+                                        <li class="tab-list__item">
+                                            <a class="tab-list__link" href="#tab3" data-toggle="tab">
+                                                <span class="step">3</span>
+                                                <span class="desc">بيانات فرعية</span>
+                                            </a>
+                                        </li>
+                                       <!--  <li class="tab-list__item">
+                                            <a class="tab-list__link" href="#tab4" data-toggle="tab">
+                                                <span class="step">4</span>
+                                                <span class="desc">Confirm Pas...</span>
+                                            </a>
+                                        </li> -->
+                                    </ul>
+                                <div class="container">
+                                    <div class="tab-content">
+                                       
+                                            <div class="tab-pane active" id="tab1">
+                                                <!--  <div class="form">
+                                                     <div class="input-group">
+                                                         <input class="input--style-1" type="text" name="username" placeholder="Username here" required="required">
+                                                         <a class="btn--next" href="#">next step</a>
+                                                     </div>
+                                                 </div> -->
+                                                 <div class="row">
+                                                     <div class="col-md-6">
+                                                         <div class="form">
+                                                             <label for="first-name">الاسم الاول *</label>
+                                                             <input type="text" class="input--style-1"  name="firstName" id="first-name" placeholder="الاسم الاول" required="required" autocomplete="off">
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-md-6">
+                                                         <div class="form">
+                                                             <label for="last-name">الاسم الاخير *</label>
+                                                             <input type="text" class="input--style-1" id="last-ame" name="lastName" placeholder="الاسم الاخير" required='required'>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="email">البريد الالكترونى *</label>
+                                                            <input type="email" class="input--style-1"  name="email" id="email" placeholder="البريد الالكترونى" required="required" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="last-name">رقم الهاتف</label>
+                                                            <input type="text" class="input--style-1" id="phone" name="phone" placeholder="رقم الهاتف">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="pass">كلمة المرور *</label>
+                                                            <input type="password" class="input--style-1"  name="pass" id="pass" placeholder="كلمة المرور" required="required" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="pass2">تأكيد كلمة المرور *</label>
+                                                            <input type="password" class="input--style-1" id="pass2" name="pass2" placeholder="تأكيد كلمةالمرور" required='required'>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="btn--next" href="#">التالى</a>
+                                                <a class="btn left-btn" href="login.html">تسجيل الدخول</a>
+                                             </div>
+                                             <div class="tab-pane" id="tab2">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="national-id">الرقم القومى</label>
+                                                            <input type="text" class="input--style-1"  name="national-id" id="national-id" placeholder="الرقم القومى" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="birth">تاريخ الميلاد</label>
+                                                            <input type="date" class="input--style-1" id="birth" name="data" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="national-id">المحافظة</label>
+                                                            <input type="text" class="input--style-1"  name="national-id" id="national-id" placeholder="الرقم القومى" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="birth">المدينة</label>
+                                                            <input type="date" class="input--style-1" id="birth" name="data" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="national-id">الوظيفة</label>
+                                                            <input type="text" class="input--style-1"  name="national-id" id="national-id" placeholder="الرقم القومى" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="birth">الحالة الاجتماعية</label>
+                                                            <input type="date" class="input--style-1" id="birth" name="data" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 
+                                                 
+                                                     <a class="btn--back left-btn" href="#">رجوع</a>
+                                                     <a class="btn--next" href="#">التالى</a>
+                                                 
+                                             </div>
+                                             <div class="tab-pane" id="tab3">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form">
+                                                            <label for="national-id">هل تعانى من اى امراض</label>
+                                                            <input type="text" class="input--style-1"  name="national-id" id="national-id" placeholder="الرقم القومى" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                                 
+                                                <a class="btn--back left-btn" href="#">رجوع</a>
+                                                <a class="btn--next" href="#">انهاء</a>
+                                             </div>
+                                            
+                                    </div>
+                                      
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Start Footer Area -->
+    <footer class="footer-area bg-f7fafd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <div class="logo">
+                            <a href="#"><img src="./images/logo/logo.png" alt="logo"
+                                    style="width:127px;height:69px"></a>
+                        </div>
+                        <p>يوفر امتيازات فريدة من خلال العديد من الخصومات المالية المباشرة والمميزة التى تلبى متطلبات
+                            الافراد الطبية المختلفة </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget pl-5">
+                        <h3>الشركة</h3>
+                        <ul class="list">
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#">الاحصائيات</a></li>
+                            <li><a href="#">الخدمات</a></li>
+                            <li><a href="#">عن الشركة</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>الدعم</h3>
+                        <ul class="list">
+                            <li><a href="#">الاسئلة الشائعة</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">شروط الستخدام</a></li>
+                            <li><a href="#">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>العنوان</h3>
+
+                        <ul class="footer-contact-info">
+                            <li><i data-feather="map-pin"></i> </li>
+                            <li><i data-feather="mail"></i> البريد الالكترونى: <a href="#"> PPMS.com</a></li>
+                            <li><i data-feather="phone-call"></i> الموبيل: <a href="#"></a></li>
+                        </ul>
+                        <ul class="social-links">
+                            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12">
+                    <div class="copyright-area">
+                        <p>Copyright 2020 PPMS All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <img src="./images/map.png" class="map" alt="map">
+        <div class="shape1"><img src="./images/banner/shapes/7.png" alt="shape"></div>
+        <div class="shape8 rotateme"><img src="./images/banner/shapes/3.png" alt="shape"></div>
+    </footer> 
+    <!-- End Footer Area -->
+    <!-- JQuery Library-->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jquery.countTo.js"></script>
+    <script src="./js/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="./js/jquery-validate/jquery.validate.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.steps.js"></script>
+    <!-- My Js Bootstrap-->
+    
+    
+    <script src="js/bootstrap-wizard/bootstrap.min.js"></script>
+    
+    <!-- My Js Plugins-->
+    <script src="./js/registration.js"></script>
+</body>
+
+</html>

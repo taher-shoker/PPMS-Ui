@@ -1,0 +1,1306 @@
+
+<!doctype html>
+<html class="no-js " lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="">
+<title>Profile</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/jquery-jvectormap.css"/>
+<link rel="stylesheet" href="./css/morris.css" />
+ <!-- MATERIAL DESIGN ICONIC FONT -->
+ <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+<!-- Custom Css -->
+<link rel="stylesheet" href="./css/profile.css">
+<link rel="stylesheet" href="./css/rtl.css">
+<link rel="stylesheet" href="./css/color_skins.css">
+</head>
+<body class="theme-green rtl">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+      
+        <div class=" loading">
+            <div class="loading__ring">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M85.5,42c-0.2-0.8-0.5-1.7-0.8-2.5c-0.3-0.9-0.7-1.6-1-2.3c-0.3-0.7-0.6-1.3-1-1.9c0.3,0.5,0.5,1.1,0.8,1.7  c0.2,0.7,0.6,1.5,0.8,2.3s0.5,1.7,0.8,2.5c0.8,3.5,1.3,7.5,0.8,12c-0.4,4.3-1.8,9-4.2,13.4c-2.4,4.2-5.9,8.2-10.5,11.2  c-1.1,0.7-2.2,1.5-3.4,2c-0.5,0.2-1.2,0.6-1.8,0.8s-1.3,0.5-1.9,0.8c-2.6,1-5.3,1.7-8.1,1.8l-1.1,0.1L53.8,84c-0.7,0-1.4,0-2.1,0  c-1.4-0.1-2.9-0.1-4.2-0.5c-1.4-0.1-2.8-0.6-4.1-0.8c-1.4-0.5-2.7-0.9-3.9-1.5c-1.2-0.6-2.4-1.2-3.7-1.9c-0.6-0.3-1.2-0.7-1.7-1.1  l-0.8-0.6c-0.3-0.1-0.6-0.4-0.8-0.6l-0.8-0.6L31.3,76l-0.2-0.2L31,75.7l-0.1-0.1l0,0l-1.5-1.5c-1.2-1-1.9-2.1-2.7-3.1  c-0.4-0.4-0.7-1.1-1.1-1.7l-1.1-1.7c-0.3-0.6-0.6-1.2-0.9-1.8c-0.2-0.5-0.6-1.2-0.8-1.8c-0.4-1.2-1-2.4-1.2-3.7  c-0.2-0.6-0.4-1.2-0.5-1.9c-0.1-0.6-0.2-1.2-0.3-1.8c-0.3-1.2-0.3-2.4-0.4-3.7c-0.1-1.2,0-2.5,0.1-3.7c0.2-1.2,0.3-2.4,0.6-3.5  c0.1-0.6,0.3-1.1,0.4-1.7l0.1-0.8l0.3-0.8c1.5-4.3,3.8-8,6.5-11c0.8-0.8,1.4-1.5,2.1-2.1c0.9-0.9,1.4-1.3,2.2-1.8  c1.4-1.2,2.9-2,4.3-2.8c2.8-1.5,5.5-2.3,7.7-2.8s4-0.7,5.2-0.6c0.6-0.1,1.1,0,1.4,0s0.4,0,0.4,0h0.1c2.7,0.1,5-2.2,5-5  c0.1-2.7-2.2-5-5-5c-0.2,0-0.2,0-0.3,0c0,0-0.2,0.1-0.6,0.1c-0.4,0-1,0-1.8,0.1c-1.6,0.1-4,0.4-6.9,1.2c-2.9,0.8-6.4,2-9.9,4.1  c-1.8,1-3.6,2.3-5.4,3.8C26,21.4,25,22.2,24.4,23c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0.2-0.5,0.4-0.6,0.7c-0.5,0.4-0.8,0.9-1.3,1.4  c-3.2,3.9-5.9,8.8-7.5,14.3l-0.3,1l-0.2,1.1c-0.1,0.7-0.3,1.4-0.4,2.1c-0.3,1.5-0.4,2.9-0.5,4.5c0,1.5-0.1,3,0.1,4.5  c0.2,1.5,0.2,3,0.6,4.6c0.1,0.7,0.3,1.5,0.4,2.3c0.2,0.8,0.5,1.5,0.7,2.3c0.4,1.6,1.1,3,1.7,4.4c0.3,0.7,0.7,1.4,1.1,2.1  c0.4,0.8,0.8,1.4,1.2,2.1c0.5,0.7,0.9,1.4,1.4,2s0.9,1.3,1.5,1.9c1.1,1.3,2.2,2.7,3.3,3.5l1.7,1.6c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0  c0,0,0,0,0,0l0.1,0.1l0.1,0.1h0.2l0.5,0.4l1,0.7c0.4,0.2,0.6,0.5,1,0.7l1.1,0.6c0.8,0.4,1.4,0.9,2.1,1.2c1.4,0.7,2.9,1.5,4.4,2  c1.5,0.7,3.1,1,4.6,1.5c1.5,0.3,3.1,0.7,4.7,0.8c1.6,0.2,3.1,0.2,4.7,0.2c0.8,0,1.6-0.1,2.4-0.1l1.2-0.1l1.1-0.1  c3.1-0.4,6.1-1.3,8.9-2.4c0.8-0.3,1.4-0.6,2.1-0.9s1.3-0.7,2-1.1c1.3-0.7,2.6-1.7,3.7-2.5c0.5-0.4,1-0.9,1.6-1.3l0.8-0.6l0.2-0.2  c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0,0,0,0v0.1l0.1-0.1l0.4-0.4c0.5-0.5,1-1,1.5-1.5c0.3-0.3,0.5-0.5,0.8-0.8l0.7-0.8  c0.9-1.1,1.8-2.2,2.5-3.3c0.4-0.6,0.7-1.1,1.1-1.7c0.3-0.7,0.6-1.2,0.9-1.8c2.4-4.9,3.5-9.8,3.7-14.4C87.3,49.7,86.6,45.5,85.5,42z"></path></svg>
+            </div>
+            <div class="loading__ring">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M85.5,42c-0.2-0.8-0.5-1.7-0.8-2.5c-0.3-0.9-0.7-1.6-1-2.3c-0.3-0.7-0.6-1.3-1-1.9c0.3,0.5,0.5,1.1,0.8,1.7  c0.2,0.7,0.6,1.5,0.8,2.3s0.5,1.7,0.8,2.5c0.8,3.5,1.3,7.5,0.8,12c-0.4,4.3-1.8,9-4.2,13.4c-2.4,4.2-5.9,8.2-10.5,11.2  c-1.1,0.7-2.2,1.5-3.4,2c-0.5,0.2-1.2,0.6-1.8,0.8s-1.3,0.5-1.9,0.8c-2.6,1-5.3,1.7-8.1,1.8l-1.1,0.1L53.8,84c-0.7,0-1.4,0-2.1,0  c-1.4-0.1-2.9-0.1-4.2-0.5c-1.4-0.1-2.8-0.6-4.1-0.8c-1.4-0.5-2.7-0.9-3.9-1.5c-1.2-0.6-2.4-1.2-3.7-1.9c-0.6-0.3-1.2-0.7-1.7-1.1  l-0.8-0.6c-0.3-0.1-0.6-0.4-0.8-0.6l-0.8-0.6L31.3,76l-0.2-0.2L31,75.7l-0.1-0.1l0,0l-1.5-1.5c-1.2-1-1.9-2.1-2.7-3.1  c-0.4-0.4-0.7-1.1-1.1-1.7l-1.1-1.7c-0.3-0.6-0.6-1.2-0.9-1.8c-0.2-0.5-0.6-1.2-0.8-1.8c-0.4-1.2-1-2.4-1.2-3.7  c-0.2-0.6-0.4-1.2-0.5-1.9c-0.1-0.6-0.2-1.2-0.3-1.8c-0.3-1.2-0.3-2.4-0.4-3.7c-0.1-1.2,0-2.5,0.1-3.7c0.2-1.2,0.3-2.4,0.6-3.5  c0.1-0.6,0.3-1.1,0.4-1.7l0.1-0.8l0.3-0.8c1.5-4.3,3.8-8,6.5-11c0.8-0.8,1.4-1.5,2.1-2.1c0.9-0.9,1.4-1.3,2.2-1.8  c1.4-1.2,2.9-2,4.3-2.8c2.8-1.5,5.5-2.3,7.7-2.8s4-0.7,5.2-0.6c0.6-0.1,1.1,0,1.4,0s0.4,0,0.4,0h0.1c2.7,0.1,5-2.2,5-5  c0.1-2.7-2.2-5-5-5c-0.2,0-0.2,0-0.3,0c0,0-0.2,0.1-0.6,0.1c-0.4,0-1,0-1.8,0.1c-1.6,0.1-4,0.4-6.9,1.2c-2.9,0.8-6.4,2-9.9,4.1  c-1.8,1-3.6,2.3-5.4,3.8C26,21.4,25,22.2,24.4,23c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0.2-0.5,0.4-0.6,0.7c-0.5,0.4-0.8,0.9-1.3,1.4  c-3.2,3.9-5.9,8.8-7.5,14.3l-0.3,1l-0.2,1.1c-0.1,0.7-0.3,1.4-0.4,2.1c-0.3,1.5-0.4,2.9-0.5,4.5c0,1.5-0.1,3,0.1,4.5  c0.2,1.5,0.2,3,0.6,4.6c0.1,0.7,0.3,1.5,0.4,2.3c0.2,0.8,0.5,1.5,0.7,2.3c0.4,1.6,1.1,3,1.7,4.4c0.3,0.7,0.7,1.4,1.1,2.1  c0.4,0.8,0.8,1.4,1.2,2.1c0.5,0.7,0.9,1.4,1.4,2s0.9,1.3,1.5,1.9c1.1,1.3,2.2,2.7,3.3,3.5l1.7,1.6c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0  c0,0,0,0,0,0l0.1,0.1l0.1,0.1h0.2l0.5,0.4l1,0.7c0.4,0.2,0.6,0.5,1,0.7l1.1,0.6c0.8,0.4,1.4,0.9,2.1,1.2c1.4,0.7,2.9,1.5,4.4,2  c1.5,0.7,3.1,1,4.6,1.5c1.5,0.3,3.1,0.7,4.7,0.8c1.6,0.2,3.1,0.2,4.7,0.2c0.8,0,1.6-0.1,2.4-0.1l1.2-0.1l1.1-0.1  c3.1-0.4,6.1-1.3,8.9-2.4c0.8-0.3,1.4-0.6,2.1-0.9s1.3-0.7,2-1.1c1.3-0.7,2.6-1.7,3.7-2.5c0.5-0.4,1-0.9,1.6-1.3l0.8-0.6l0.2-0.2  c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0,0,0,0v0.1l0.1-0.1l0.4-0.4c0.5-0.5,1-1,1.5-1.5c0.3-0.3,0.5-0.5,0.8-0.8l0.7-0.8  c0.9-1.1,1.8-2.2,2.5-3.3c0.4-0.6,0.7-1.1,1.1-1.7c0.3-0.7,0.6-1.2,0.9-1.8c2.4-4.9,3.5-9.8,3.7-14.4C87.3,49.7,86.6,45.5,85.5,42z"></path></svg>
+            </div>
+          </div>
+    </div>
+    
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    
+    <!-- Top Bar -->
+    <nav class="navbar p-l-5 p-r-5">
+        <ul class="nav navbar-nav navbar-left  nav-tabs">
+            <li>
+                <div class="navbar-header">
+                    <a href="javascript:void(0);" class="bars"></a>
+                    <a class="navbar-brand" href="index.html"><span class="m-l-10">معاك</span></a>
+                </div>
+            </li>
+            <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a></li>
+          
+         
+           
+            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i>
+                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+                </a>
+                <ul class="dropdown-menu pullDown">
+                    <li class="body">
+                        <ul class="menu list-unstyled">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="./images/teamwork4.jpg" alt="">
+                                        <div class="media-body">
+                                            <span class="name">Sophia <span class="time">30min ago</span></span>
+                                            <span class="message">There are many variations of passages</span>                                        
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="./images/teamwork5.jpg" alt="">
+                                        <div class="media-body">
+                                            <span class="name">Sophia <span class="time">31min ago</span></span>
+                                            <span class="message">There are many variations of passages of Lorem Ipsum</span>                                        
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="./images/teamwork6.jpg" alt="">
+                                        <div class="media-body">
+                                            <span class="name">Isabella <span class="time">35min ago</span></span>
+                                            <span class="message">There are many variations of passages</span>                                        
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="./images/teamwork5.jpg" alt="">
+                                        <div class="media-body">
+                                            <span class="name">Alexander <span class="time">35min ago</span></span>
+                                            <span class="message">Contrary to popular belief, Lorem Ipsum random</span>                                        
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="./images/teamwork4.jpg" alt="">
+                                        <div class="media-body">
+                                            <span class="name">Grayson <span class="time">1hr ago</span></span>
+                                            <span class="message">There are many variations of passages</span>                                        
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                        
+                        </ul>
+                    </li>
+                    <li class="footer"> <a href="javascript:void(0);">View All</a> </li>
+                </ul>
+            </li>
+           
+            <li class="hidden-sm-down">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-addon"><i class="zmdi zmdi-search"></i></span>
+                </div>
+            </li>        
+            <li class="float-right">
+                <a href="sign-in.html" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a>
+            </li>
+        </ul>
+       
+    </nav>
+    
+  
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <ul class="nav nav-tabs list-unstyled">
+            <li class="nav-item"><a class="nav-link"  href="javascript:void(0);"><img src="./images/logo/vendors/vendor1.png" width="100%" alt=""></a></li>
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#dashboard"><i class="zmdi zmdi-home m-r-5"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#user"><i class="zmdi zmdi-account m-r-5"></i>معاك</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane stretchRight active" id="dashboard">
+                <div class="menu">
+                    <ul class="list ">                    
+                        <li class="active open"> <a href="javascript:void(0);" class="menu-toggle"><i class="material-icons">dashboard</i><span>لوحة التحكم</span></a>
+                            <ul class="ml-menu nav nav-tabs">
+                                <li class="nav-item"><a class="nav-link " data-toggle="tab" href="#home-dash"><i class="zmdi zmdi-home"></i> <span>الرئيسية</span></a></li>
+                                <li class="nav-item"><a class="nav-link " data-toggle="tab" href="#contact"><i class="zmdi zmdi-account-box-phone"></i><span>قائمة المشتركين</span> </a></li>
+                                <li class="nav-item"><a class="nav-link " data-toggle="tab" href="#mail-show"><i class="zmdi zmdi-email"></i><span>صندوق البريد</span> </a></li>
+
+                                <li class="nav-item"> <a href="#offers" class="menu-toggle nav-link" data-toggle="tab"><i class="zmdi zmdi-shopping-cart"></i><span> ادارة العروض </span> </a>
+                                    <ul class="ml-menu nav nav-tab">
+                                       
+                                        <li class="nav-item"> <a class="nav-link " data-toggle="tab" href="#offers-show" >قائمة العروض</a></li>
+                                        <li class="nav-item"> <a class="nav-link " data-toggle="tab" href="#offers-add" > إضافة عرض</a></li>
+
+                                        
+                                     
+                                    </ul>
+                                </li>
+                                <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>ادارة الفروع</span> </a>
+                                    <ul class="ml-menu">
+                                       
+                                    </ul>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                       
+                       
+                      
+                      
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane stretchLeft" id="user">
+                <div class="menu">
+                    <ul class="list">
+                        <li>
+                            <div class="user-info m-b-20 p-b-15">
+                                <div class="image"><a href="profile.html"><img src="./images/teamwork1.jpg" alt="User"></a></div>
+                                <div class="detail">
+                                    <h4>Michael</h4>
+                                    <small>UI UX Designer</small>                        
+                                </div>
+                                <a title="facebook" href="javascript:void(0);"><i class="zmdi zmdi-facebook"></i></a>
+                                <a title="twitter" href="javascript:void(0);"><i class="zmdi zmdi-twitter"></i></a>
+                                <a title="instagram" href="javascript:void(0);"><i class="zmdi zmdi-instagram"></i></a>
+                                <p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
+                               
+                        </li>
+                        <li>
+                            <small class="text-muted">Email address: </small>
+                            <p>michael@gmail.com</p>
+                            <hr>
+                            <small class="text-muted">Phone: </small>
+                            <p>+ 202-555-0191</p>
+                                                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </aside>
+    
+ 
+    
+    <!-- Chat-launcher -->
+    <div class="chat-launcher"></div>
+    <div class="chat-wrapper">
+        <div class="card">
+            <div class="header">
+                <ul class="list-unstyled team-info margin-0">
+                    <li class="m-r-15"><h2>Design Team</h2></li>
+                    <li><img src="./images/teamwork4.jpg" alt="Avatar"></li>
+                    <li><img src="./images/teamwork5.jpg" alt="Avatar"></li>
+                    <li><img src="./images/teamwork6.jpg" alt="Avatar"></li>
+                    <li><img src="./images/teamwork5.jpg" alt="Avatar"></li>
+                    <li><a href="javascript:void(0);" title="Add Member"><i class="zmdi zmdi-plus-circle"></i></a></li>
+                </ul>                       
+            </div>
+            <div class="body">
+                <div class="chat-widget">
+                <ul class="chat-scroll-list clearfix">
+                    <li class="left float-left">
+                        <img src="./images/teamwork5.jpg" class="rounded-circle" alt="">
+                        <div class="chat-info">
+                            <a class="name" href="javascript:void(0);">Alexander</a>
+                            <span class="datetime">6:12</span>                            
+                            <span class="message">Hello, John </span>
+                        </div>
+                    </li>
+                    <li class="right">
+                        <div class="chat-info"><span class="datetime">6:15</span> <span class="message">Hi, Alexander<br> How are you!</span> </div>
+                    </li>
+                    <li class="right">
+                        <div class="chat-info"><span class="datetime">6:16</span> <span class="message">There are many variations of passages of Lorem Ipsum available</span> </div>
+                    </li>
+                    <li class="left float-left"> <img src="./images/teamwork4.jpg" class="rounded-circle" alt="">
+                        <div class="chat-info"> <a class="name" href="javascript:void(0);">Elizabeth</a> <span class="datetime">6:25</span> <span class="message">Hi, Alexander,<br> John <br> What are you doing?</span> </div>
+                    </li>
+                    <li class="left float-left"> <img src="./images/teamwork6.jpg" class="rounded-circle" alt="">
+                        <div class="chat-info"> <a class="name" href="javascript:void(0);">Michael</a> <span class="datetime">6:28</span> <span class="message">I would love to join the team.</span> </div>
+                    </li>
+                        <li class="right">
+                        <div class="chat-info"><span class="datetime">7:02</span> <span class="message">Hello, <br>Michael</span> </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="input-group p-t-15">
+                    <input type="text" class="form-control" placeholder="Enter text here...">
+                    <span class="input-group-addon">
+                        <i class="zmdi zmdi-mail-send"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+
+
+ 
+<div class="tab-content">
+     <!-- Main Content -->
+     <section class="content tab-pane stretchLeft active  "  id="home-dash"  >
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2>Dashboard
+                    <small>Welcome </small>
+                    </h2>
+                </div>            
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>hello السلام عليكم</h2>                        
+                        </div>
+                        <div class="body">
+                            <p>أبجد هوز هو مجرد دمية النص من صناعة الطباعة والتنضيد. وكان أبجد هوز نص الدمية القياسية في هذه الصناعة من أي وقت مضى منذ 1500s، عندما استغرقت طابعة غير معروفة المطبخ من نوع وسارعت لجعل كتاب عينة نوع. وقد نجا ليس فقط خمسة قرون، ولكن أيضا قفزة في التنضيد الإلكترونية، وتبقى دون تغيير أساسا. وقد شاع في 1960s مع الافراج عن أوراق ليتراسيت تحتوي على مقاطع أبجد هوز، ومؤخرا مع برامج النشر المكتبي مثل ألدوس باجيماكر بما في ذلك إصدارات أبجد هوز.</p>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="body text-center">
+                            <div class="sparkline m-b-20" data-type="bar" data-width="97%" data-height="40px" data-bar-Width="3" data-bar-Spacing="5" data-bar-Color="#00ced1">1,2,2,3,3,4,4,5,5,6,6,5,5,4,4,3,3,2,2,1</div>
+                            <h3 class="m-b-0">457 512</h3>
+                            <small class="displayblock">47% Average <i class="zmdi zmdi-trending-up"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="body text-center">
+                            <div class="sparkline m-b-20" data-type="bar" data-width="97%" data-height="40px" data-bar-Width="3" data-bar-Spacing="5" data-bar-Color="#e4d354">1,2,2,3,3,4,4,5,5,6,6,5,5,4,4,3,3,2,2,1</div>
+                            <h3 class="m-b-0">236 512</h3>
+                            <small class="displayblock">13% Average <i class="zmdi zmdi-trending-down"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="body text-center">
+                            <div class="sparkline m-b-20" data-type="bar" data-width="97%" data-height="40px" data-bar-Width="3" data-bar-Spacing="5" data-bar-Color="#7cb5ec">1,2,3,4,5,4,3,2,1,2,3,4,5,6,7,8,7,6,5,4</div>
+                            <h3 class="m-b-0">236 512</h3>
+                            <small class="displayblock">47% Average <i class="zmdi zmdi-trending-up"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="body text-center">
+                            <div class="sparkline m-b-20" data-type="bar" data-width="97%" data-height="40px" data-bar-Width="3" data-bar-Spacing="5" data-bar-Color="#f15c80">8,7,6,5,4,3,2,2,3,4,5,6,7,8,7,6,5,4</div>
+                            <h3 class="m-b-0">236 512</h3>
+                            <small class="displayblock">47% Average <i class="zmdi zmdi-trending-up"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+          
+            <div class="row clearfix social-widget">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card info-box-2 hover-zoom-effect facebook-widget">
+                        <div class="icon"><i class="zmdi zmdi-facebook"></i></div>
+                        <div class="content">
+                            <div class="text">Like</div>
+                            <div class="number">123</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card info-box-2 hover-zoom-effect instagram-widget">
+                        <div class="icon"><i class="zmdi zmdi-instagram"></i></div>
+                        <div class="content">
+                            <div class="text">Followers</div>
+                            <div class="number">231</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card info-box-2 hover-zoom-effect twitter-widget">
+                        <div class="icon"><i class="zmdi zmdi-twitter"></i></div>
+                        <div class="content">
+                            <div class="text">Followers</div>
+                            <div class="number">31</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card info-box-2 hover-zoom-effect google-widget">
+                        <div class="icon"><i class="zmdi zmdi-google"></i></div>
+                        <div class="content">
+                            <div class="text">Like</div>
+                            <div class="number">254</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card info-box-2 hover-zoom-effect linkedin-widget">
+                        <div class="icon"><i class="zmdi zmdi-linkedin"></i></div>
+                        <div class="content">
+                            <div class="text">Followers</div>
+                            <div class="number">2510</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card info-box-2 hover-zoom-effect behance-widget">
+                        <div class="icon"><i class="zmdi zmdi-behance"></i></div>
+                        <div class="content">
+                            <div class="text">Project</div>
+                            <div class="number">121</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                        <div class="card">
+                        <div class="header">
+                            <h2>Media <strong>Social</strong></h2>
+                            <ul class="header-dropdown">
+                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
+                                    <ul class="dropdown-menu slideUp float-right">
+                                        <li><a href="javascript:void(0);">Edit</a></li>
+                                        <li><a href="javascript:void(0);">Delete</a></li>
+                                        <li><a href="javascript:void(0);">Report</a></li>
+                                    </ul>
+                                </li>
+                                <li class="remove">
+                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive social_media_table">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Media</th>
+                                            <th>Name</th>
+                                            <th>Like</th>                                                                                
+                                            <th>Comments</th>
+                                            <th>Share</th>
+                                            <th>Members</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="social_icon linkedin"><i class="zmdi zmdi-linkedin"></i></span>
+                                            </td>
+                                            <td><span class="list-name">Linked In</span>
+                                                <span class="text-muted">Florida, United States</span>
+                                            </td>
+                                            <td>19K</td>
+                                            <td>14K</td>
+                                            <td>10K</td>
+                                            <td>
+                                                <span class="badge badge-success">2341</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="social_icon twitter-table"><i class="zmdi zmdi-twitter"></i></span>
+                                            </td>
+                                            <td><span class="list-name">Twitter</span>
+                                                <span class="text-muted">Arkansas, United States</span>
+                                            </td>
+                                            <td>7K</td>
+                                            <td>11K</td>
+                                            <td>21K</td>
+                                            <td>
+                                                <span class="badge badge-success">952</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="social_icon facebook"><i class="zmdi zmdi-facebook"></i></span>
+                                            </td>
+                                            <td><span class="list-name">Facebook</span>
+                                                <span class="text-muted">Illunois, United States</span>
+                                            </td>
+                                            <td>15K</td>
+                                            <td>18K</td>
+                                            <td>8K</td>
+                                            <td>
+                                                <span class="badge badge-success">6127</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="social_icon google"><i class="zmdi zmdi-google-plus"></i></span>
+                                            </td>
+                                            <td><span class="list-name">Google Plus</span>
+                                                <span class="text-muted">Arizona, United States</span>
+                                            </td>
+                                            <td>15K</td>
+                                            <td>18K</td>
+                                            <td>154</td>
+                                            <td>
+                                                <span class="badge badge-success">325</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="social_icon youtube"><i class="zmdi zmdi-youtube-play"></i></span>
+                                            </td>
+                                            <td><span class="list-name">YouTube</span>
+                                                <span class="text-muted">Alaska, United States</span>
+                                            </td>
+                                            <td>15K</td>
+                                            <td>18K</td>
+                                            <td>200</td>
+                                            <td>
+                                                <span class="badge badge-success">160</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <!-- offers list-->
+    <section class="content ecommerce-page tab-pane stretchLeft " id="offers">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2> ادارة العروض </h2>
+                </div>
+              
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="container-fluid tab-pane stretchLeft " id="offers-show">
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card product_item_list">
+                            <div class="body table-responsive">
+                                <table class="table table-hover m-b-0">
+                                    <thead>
+                                        <tr>
+                                            <th>صورة</th>
+                                            <th>اسم العرض</th>
+                                            <th data-breakpoints="sm xs">تفاصيل</th>
+                                            <th data-breakpoints="xs">Amount</th>
+                                            <th data-breakpoints="xs md">Stock</th>
+                                            <th data-breakpoints="sm xs md">___</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="./images/offers/offer1.png" width="48" alt="Product img"></td>
+                                            <td><h5>Simple Black Clock</h5></td>
+                                            <td><span class="text-muted">randomised words even slightly believable</span></td>
+                                            <td>$16.00</td>
+                                            <td><span class="col-green">In Stock</span></td>
+                                            <td>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-green"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="./images/offers/offer2.png" width="48" alt="Product img"></td>
+                                            <td><h5>Brone Candle</h5></td>
+                                            <td><span class="text-muted">It is a long established  will be distracted</span></td>
+                                            <td>$15.00</td>
+                                            <td><span class="col-amber">Low Stock</span></td>
+                                            <td>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-green"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="./images/offers/offer1.png" width="48" alt="Product img"></td>
+                                            <td><h5>Wood Simple Clock</h5></td>
+                                            <td><span class="text-muted">There passages of Lorem Ipsum available</span></td>
+                                            <td>$16.00</td>
+                                            <td><span class="col-amber">Low Stock</span></td>
+                                            <td>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-green"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="./images/offers/offer2.png" width="48" alt="Product img"></td>
+                                            <td><h5>Unero Small Bag</h5></td>
+                                            <td><span class="text-muted">It is a long established fact that a distracted</span></td>
+                                            <td>$23.00</td>
+                                            <td><span class="col-red">Out Of Stock</span></td>
+                                            <td>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-green"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="./images/offers/offer1.png" width="48" alt="Product img"></td>
+                                            <td><h5>Simple Black Clock</h5></td>
+                                            <td><span class="text-muted">Contrary to popular belief, simply random text</span></td>
+                                            <td>$16.00</td>
+                                            <td><span class="col-green">In Stock</span></td>
+                                            <td>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-green"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="./images/offers/offer2.png" width="48" alt="Product img"></td>
+                                            <td><h5>Brone Lamp Glasses</h5></td>
+                                            <td><span class="text-muted">All the Lorem Ipsum generators on predefined chunks</span></td>
+                                            <td>$12.00</td>
+                                            <td><span class="col-green">In Stock</span></td>
+                                            <td>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-green"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="./images/offers/offer1.png" width="48" alt="Product img"></td>
+                                            <td><h5>Simple Black Clock</h5></td>
+                                            <td><span class="text-muted">established fact that a be distracted</span></td>
+                                            <td>$22.00</td>
+                                            <td><span class="col-red">Out Of Stock</span></td>
+                                            <td>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-green"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="javascript:void(0);" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            </td>
+                                        </tr>        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="body">                            
+                                <ul class="pagination pagination-primary m-b-0">
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class="zmdi zmdi-arrow-right"></i></a></li>
+                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class="zmdi zmdi-arrow-left"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="container-fluid tab-pane stretchLeft " id="offers-add">
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Advanced</strong> Validation</h2>
+                                <ul class="header-dropdown">
+                                    <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another action</a></li>
+                                            <li><a href="javascript:void(0);">Something else</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="remove">
+                                        <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <form id="form_advanced_validation" method="POST" novalidate="novalidate">
+                                    <div class="form-group form-float">
+                                        <input type="text" class="form-control" name="minmaxlength" maxlength="10" minlength="3" required="" aria-required="true">                                
+                                        <div class="help-info">Min. 3, Max. 10 characters</div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <input type="text" class="form-control" name="minmaxvalue" min="10" max="200" required="" aria-required="true">                                
+                                        <div class="help-info">Min. Value: 10, Max. Value: 200</div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <input type="url" class="form-control" name="url" required="" aria-required="true">                                
+                                        <div class="help-info">Starts with http://, https://, ftp:// etc</div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <input type="text" class="form-control" name="date" required="" aria-required="true">                                
+                                        <div class="help-info">YYYY-MM-DD format</div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <input type="number" class="form-control" name="number" required="" aria-required="true">                                
+                                        <div class="help-info">Numbers only</div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <input type="text" class="form-control" name="creditcard" pattern="[0-9]{13,16}" required="" aria-required="true">                                
+                                        <div class="help-info">Ex: 1234-5678-9012-3456</div>
+                                    </div>
+                                    <button class="btn btn-raised btn-primary btn-round waves-effect" type="submit">SUBMIT</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+           
+        </div>
+        
+    </section>
+    <!-- contact content-->
+<section class="content contact  tab-pane stretchLeft" id="contact">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <h2>Contact
+                </h2>
+            </div>
+           
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card action_bar">
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-lg-1 col-md-2 col-3">
+                                <div class="checkbox inlineblock delete_all">
+                                    <input id="deleteall" type="checkbox">
+                                    <label for="deleteall">
+                                        All
+                                    </label>
+                                </div>                                
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-6">
+                                <div class="input-group search">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-addon">
+                                        <i class="zmdi zmdi-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-5 col-3 text-right">
+                                <div class="btn-group hidden-sm-down" role="group">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-neutral dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="zmdi zmdi-label"></i>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu pullDown">
+                                            <li>
+                                                <a href="javascript:void(0);">Family</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">Work</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">Google</a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="javascript:void(0);">Create a Label</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-neutral hidden-sm-down">
+                                    <i class="zmdi zmdi-plus-circle"></i>
+                                </button>
+                                <button type="button" class="btn btn-neutral hidden-sm-down">
+                                    <i class="zmdi zmdi-archive"></i>
+                                </button>
+                                <button type="button" class="btn btn-neutral">
+                                    <i class="zmdi zmdi-delete"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="body table-responsive">
+                        <table class="table table-hover m-b-0 c_list">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>                                    
+                                    <th data-breakpoints="xs">Phone</th>                                    
+                                    <th data-breakpoints="xs sm md">Address</th>
+                                    <th data-breakpoints="xs">Action</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input id="delete_2" type="checkbox">
+                                            <label for="delete_2">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="./images/teamwork4.jpg" class="rounded-circle avatar" alt="">
+                                        <p class="c_name">John Smith <span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
+                                    </td>
+                                    <td>
+                                        <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-2583</span>
+                                    </td>                                   
+                                    <td>
+                                        <address><i class="zmdi zmdi-pin"></i>123 6th St. Melbourne, FL 32904</address>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input id="delete_3" type="checkbox">
+                                            <label for="delete_3">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="./images/teamwork5.jpg" class="rounded-circle avatar" alt="">
+                                        <p class="c_name">Hossein Shams <span class="badge badge-info m-l-10 hidden-sm-down">Google</span></p>
+                                    </td>
+                                    <td>
+                                        <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-5689</span>
+                                    </td>                                    
+                                    <td>
+                                        <address><i class="zmdi zmdi-pin"></i>44 Shirley Ave. West Chicago, IL 60185</address>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input id="delete_4" type="checkbox">
+                                            <label for="delete_4">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="./images/teamwork6.jpg" class="rounded-circle avatar" alt="">
+                                        <p class="c_name">Maryam Amiri</p>
+                                    </td>
+                                    <td>
+                                        <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-9513</span>
+                                    </td>
+                                    <td>
+                                        <address><i class="zmdi zmdi-pin"></i>123 6th St. Melbourne, FL 32904</address>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input id="delete_5" type="checkbox">
+                                            <label for="delete_5">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="./images/teamwork5.jpg" class="rounded-circle avatar" alt="">
+                                        <p class="c_name">Tim Hank<span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
+                                    </td>
+                                    <td>
+                                        <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-1212</span>
+                                    </td>
+                                    <td>
+                                        <address><i class="zmdi zmdi-pin"></i>70 Bowman St. South Windsor, CT 06074</address>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input id="delete_6" type="checkbox">
+                                            <label for="delete_6">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="./images/teamwork6.jpg" class="rounded-circle avatar" alt="">
+                                        <p class="c_name">Fidel Tonn<span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
+                                    </td>
+                                    <td>
+                                        <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-2323</span>
+                                    </td>
+                                    <td>
+                                        <address><i class="zmdi zmdi-pin"></i>514 S. Magnolia St. Orlando, FL 32806</address>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input id="delete_7" type="checkbox">
+                                            <label for="delete_7">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="./images/teamwork4.jpg" class="rounded-circle avatar" alt="">
+                                        <p class="c_name">Gary Camara<span class="badge badge-success m-l-10 hidden-sm-down">Work</span></p>
+                                    </td>
+                                    <td>
+                                        <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-1005</span>
+                                    </td>
+                                    <td>
+                                        <address><i class="zmdi zmdi-pin"></i>44 Shirley Ave. West Chicago, IL 60185</address>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input id="delete_8" type="checkbox">
+                                            <label for="delete_8">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="./images/teamwork1.jpg" class="rounded-circle avatar" alt="">
+                                        <p class="c_name">Frank Camly</p>
+                                    </td>
+                                    <td>
+                                        <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-9999</span>
+                                    </td>
+                                    <td>
+                                        <address><i class="zmdi zmdi-pin"></i>123 6th St. Melbourne, FL 32904</address>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input id="delete_9" type="checkbox">
+                                            <label for="delete_9">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="./images/teamwork5.jpg" class="rounded-circle avatar" alt="">
+                                        <p class="c_name">Tim Hank<span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
+                                    </td>
+                                    <td>
+                                        <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-1212</span>
+                                    </td>
+                                    <td>
+                                        <address><i class="zmdi zmdi-pin"></i>70 Bowman St. South Windsor, CT 06074</address>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                                        <button class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="body">                            
+                        <ul class="pagination pagination-primary m-b-0">
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class="zmdi zmdi-arrow-right"></i></a></li>
+                            <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class="zmdi zmdi-arrow-left"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- inbox mail-->
+<section class="content inbox tab-pane stretchLeft" id="mail-show">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <h2>Inbox
+               
+                </h2>
+            </div>
+           
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card action_bar">
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-lg-1 col-md-1 col-3">
+                                <div class="checkbox inlineblock delete_all">
+                                    <input id="deleteall" type="checkbox">
+                                    <label for="deleteall">
+                                        All
+                                    </label>
+                                </div>                                
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-6">
+                                <div class="input-group search">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-addon">
+                                        <i class="zmdi zmdi-search"></i>
+                                    </span>
+                                </div>
+                            </div>                            
+                            <div class="col-lg-6 col-md-6 col-3 text-right">
+                                <div class="btn-group hidden-sm-down">
+                                    <button type="button" class="btn btn-neutral dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span> </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0);">Unread</a></li>
+                                        <li><a href="javascript:void(0);">Unimportant</a></li>
+                                        <li><a href="javascript:void(0);">Add star</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0);">Mute</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group hidden-md-down hidden-sm-down">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-neutral dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="zmdi zmdi-label"></i>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="javascript:void(0);">Family</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">Work</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">Google</a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="javascript:void(0);">Create a Label</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-group hidden-md-down hidden-sm-down">
+                                    <button type="button" class="btn btn-neutral dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-folder"></i> <span class="caret"></span> </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0);">Important</a></li>
+                                        <li><a href="javascript:void(0);">Social</a></li>
+                                        <li><a href="javascript:void(0);">Bank Statements</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0);">Create a folder</a></li>
+                                    </ul>
+                                </div>                                
+                                <button type="button" class="btn btn-neutral hidden-sm-down">
+                                    <i class="zmdi zmdi-plus-circle"></i>
+                                </button>
+                                <button type="button" class="btn btn-neutral hidden-sm-down">
+                                    <i class="zmdi zmdi-archive"></i>
+                                </button>
+                                <button type="button" class="btn btn-neutral btn-danger">
+                                    <i class="zmdi zmdi-delete"></i>
+                                </button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>        
+        <div class="row clearfix">
+            <div class="col-md-12 col-lg-12 col-xl-12">
+                <ul class="mail_list list-group list-unstyled">
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">                                
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_1">
+                                        <label for="basic_checkbox_1"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite text-muted hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork1.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Velit a labore</a>
+                                    <span class="badge bg-blue">Family</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">Lorem Ipsum is simply dumm dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item unread">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_2">
+                                        <label for="basic_checkbox_2"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite col-amber hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork6.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Simply dummy text</a>
+                                    <span class="badge bg-amber">Shop</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_3">
+                                        <label for="basic_checkbox_3"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite text-muted hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork1.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Velit a labore</a>
+                                    <span class="badge bg-red">Google</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg"> If you are going to use a passage of Lorem Ipsum, you need to be sure</p>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item unread">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_4">
+                                        <label for="basic_checkbox_4"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite text-muted hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork5.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Variations of passages</a>
+                                    <span class="badge bg-blush">Themeforest</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">There are many variations of passages of Lorem Ipsum available, but the majority </p>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_5">
+                                        <label for="basic_checkbox_5"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite text-muted hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork6.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Generators on the Internet</a>
+                                    <span class="badge bg-green">Work</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">LAll the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_6">
+                                        <label for="basic_checkbox_6"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite col-amber hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork6.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Contrary to popular</a>
+                                    <span class="badge bg-blush">Themeforest</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_7">
+                                        <label for="basic_checkbox_7"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite col-amber hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork5.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Velit a labore</a>
+                                    <span class="badge bg-green">Work</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">Lorem Ipsum is simply dumm dummy text of the printing and typesetting industry. </p>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_8" checked="">
+                                        <label for="basic_checkbox_8"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite col-amber hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork1.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Variations of passages</a>
+                                    <span class="badge bg-blush">Themeforest</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">There are many variations of passages of Lorem Ipsum available, but the majority </p>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_9">
+                                        <label for="basic_checkbox_9"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite text-muted hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork5.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Generators on the Internet</a>
+                                    <span class="badge bg-green">Work</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">LAll the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="controls">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="basic_checkbox_10">
+                                        <label for="basic_checkbox_10"></label>
+                                    </div>
+                                    <a href="javascript:void(0);" class="favourite text-muted hidden-sm-down" data-toggle="active"></a>
+                                </div>
+                                <div class="thumb hidden-sm-down m-r-20"> <img src="./images/teamwork4.jpg" class="rounded-circle" alt=""> </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <a href="#" class="m-r-10">Velit a labore</a>
+                                    <span class="badge bg-blue">Family</span>
+                                    <small class="float-right text-muted"><time class="hidden-sm-down" datetime="2017">12:35 AM</time><i class="zmdi zmdi-attachment-alt"></i> </small>
+                                </div>
+                                <p class="msg">Lorem Ipsum is simply dumm dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="card m-t-5">
+                    <div class="body">
+                        <ul class="pagination pagination-primary m-b-0">
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="javascript:void(0);">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+<!-- Jquery Core Js --> 
+    <!-- JQuery Library-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="./js/morrisscripts.js"></script>
+    <script src="./js/vendorscripts.js"></script>
+    <script src="./js/jvectormap.js"></script>
+    <script src="./js/mainscripts.js"></script>
+    <script src="./js/knob.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <!-- My Js Bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+
+<script src="./js/profile.js"></script>
+</body>
+</html>
