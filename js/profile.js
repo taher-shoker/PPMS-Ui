@@ -14,3 +14,8 @@ $(window).on('scroll',function() {
     });
 });
 //======
+
+if ($('#view_module').hasClass('active')) {
+   
+    $('#view_module').css('display', 'flex')
+}

@@ -222,7 +222,7 @@
                 <li class="nav-item col-lg-2 col-md-4 col-6"><a class="nav-link " data-toggle="tab" href="#network">
 
                     <div class="card info-box-2 hover-zoom-effect facebook-widget">
-                        <div class="icon"><i class="material-icons col-blue"> rss_feed</i></div>
+                        <div class="icon"><i class="material-icons col-blue"> device_hub</i></div>
                         <div class="content">
                             <div class="text">الشبكة</div>
                             <div class="number">50</div>
@@ -296,18 +296,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>نتيجة بحث <strong>الشبكة</strong></h2>
-                            <ul class="header-dropdown">
-                                <!--   <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                                                     <ul class="dropdown-menu slideUp float-right">
-                                                                         <li><a href="javascript:void(0);">Edit</a></li>
-                                                                         <li><a href="javascript:void(0);">Delete</a></li>
-                                                                         <li><a href="javascript:void(0);">Report</a></li>
-                                                                     </ul>
-                                                                 </li> -->
-                                <li class="remove">
-                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
-                                </li>
-                            </ul>
+                          
                         </div>
                         <div class="body">
             
@@ -317,19 +306,26 @@
                 <div role="tabpanel" class="tab-pane stretchLeft  " id="discounts">
                     <div class="card">
                         <div class="header">
+                           
                             <h2>نتيجة بحث <strong>الخصومات</strong></h2>
                             <ul class="header-dropdown">
-                                <!--   <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                                                     <ul class="dropdown-menu slideUp float-right">
-                                                                         <li><a href="javascript:void(0);">Edit</a></li>
-                                                                         <li><a href="javascript:void(0);">Delete</a></li>
-                                                                         <li><a href="javascript:void(0);">Report</a></li>
-                                                                     </ul>
-                                                                 </li> -->
-                                <li class="remove">
-                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0);" class=""><i class="material-icons">view_module</i></a>
                                 </li>
-                            </ul>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0);" class=""><i class="material-icons">view_headline</i></a>
+                                </li>
+                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
+                                                                   <ul class="dropdown-menu slideUp float-right">
+                                                                       <li><a href="javascript:void(0);">الاكثر خصومات</a></li>
+                                                                       <li><a href="javascript:void(0);">الاقل خصومات</a></li>
+                                                                      
+                                                                   </ul>
+                               </li> 
+                              <li class="remove">
+                                  <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
+                              </li>
+                          </ul>
                         </div>
                         <div class="body">
             
@@ -340,84 +336,260 @@
                     <div class="card">
                         <div class="header">
                             <h2>نتيجة بحث <strong>كوبونات</strong></h2>
-                            <ul class="header-dropdown">
-                                <!--   <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                                                    <ul class="dropdown-menu slideUp float-right">
-                                                                        <li><a href="javascript:void(0);">Edit</a></li>
-                                                                        <li><a href="javascript:void(0);">Delete</a></li>
-                                                                        <li><a href="javascript:void(0);">Report</a></li>
-                                                                    </ul>
-                                                                </li> -->
-                                <li class="remove">
-                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
+                            <ul class="header-dropdown nav nav-tabs">
+
+                                <li class="nav-item">
+                                    <a data-toggle="tab" href="#view_module"  class="nav-link view_module "><i class="material-icons">view_module</i></a>
                                 </li>
-                            </ul>
+                                <li class="nav-item">
+                                    <a data-toggle="tab" href="#view_headline"  class=" nav-link view_headline "><i class="material-icons">view_headline</i></a>
+                                </li>
+                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
+                                                                   <ul class="dropdown-menu slideUp float-right">
+                                                                       <li><a href="javascript:void(0);">الاكثر خصومات</a></li>
+                                                                       <li><a href="javascript:void(0);">الاقل خصومات</a></li>
+                                                                      
+                                                                   </ul>
+                               </li> 
+                              <li class="remove">
+                                  <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
+                              </li>
+                          </ul>
                         </div>
-                        <div class="body">
-                            <div class="table-responsive social_media_table">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>اسم الشركة</th>
-                                            <th>عن الشركة</th>
-                                            <th>الخصومات</th>
-                                            <th>كوبونات</th>
-                                            <th>عدد الفروع</th>
-                                            <th>التقييم</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody style="text-align: right;">
-                                        <tr>
-                                            <td><span class="sponsers-logo"><img src="./images/sponsers/borg.jpg" alt=""> معمل
-                                                    البرج</span>
-                                            </td>
-                                            <td class="sponsers-desc">
-                                                <span class="text-muted ">تعمل فى مجال التحاليل الطبية وتساعد على تطوير
-                                                    المنظومة
-                                                    البيطية الكاملة فى جميع انحاء الوطن العربى </span>
-                                            </td>
-                                            <td>19K</td>
-                                            <td>14K</td>
-                                            <td>10K</td>
-                                            <td>
-                                                <span class="m-l-10">
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="sponsers-logo"><img src="./images/sponsers/mokh.jpg" alt=""> معمل
-                                                    المختبر</span>
-                                            </td>
-                                            <td class="sponsers-desc">
-                                                <span class="text-muted ">تعمل فى مجال التحاليل الطبية وتساعد على تطوير
-                                                    المنظومة
-                                                    البيطية الكاملة فى جميع انحاء الوطن العربى </span>
-                                            </td>
-                                            <td>19K</td>
-                                            <td>14K</td>
-                                            <td>10K</td>
-                                            <td>
-                                                <span class="m-l-10">
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                    <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
-                                                    <a href="javascript:void(0);" style="color: black;"> <i
-                                                            class="zmdi zmdi-star-outline"></i> </a>
-            
-                                                </span>
-                                            </td>
-                                        </tr>
-            
-                                    </tbody>
-                                </table>
+                        <div class="tab-content">
+
+                            <div  role="tabpanel" class="body tab-pane stretchLeft  " id="view_headline">
+                                <div class="table-responsive social_media_table">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>اسم الشركة</th>
+                                                <th>عن الشركة</th>
+                                                <th>الخصومات</th>
+                                                <th>كوبونات</th>
+                                                <th>عدد الفروع</th>
+                                                <th>التقييم</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="text-align: right;">
+                                            <tr>
+                                                <td><span class="sponsers-logo"><img src="./images/sponsers/borg.jpg" alt=""> معمل
+                                                        البرج</span>
+                                                </td>
+                                                <td class="sponsers-desc">
+                                                    <span class="text-muted ">تعمل فى مجال التحاليل الطبية وتساعد على تطوير
+                                                        المنظومة
+                                                        البيطية الكاملة فى جميع انحاء الوطن العربى </span>
+                                                </td>
+                                                <td>19K</td>
+                                                <td>14K</td>
+                                                <td>10K</td>
+                                                <td>
+                                                    <span class="m-l-10">
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="sponsers-logo"><img src="./images/sponsers/mokh.jpg" alt=""> معمل
+                                                        المختبر</span>
+                                                </td>
+                                                <td class="sponsers-desc">
+                                                    <span class="text-muted ">تعمل فى مجال التحاليل الطبية وتساعد على تطوير
+                                                        المنظومة
+                                                        البيطية الكاملة فى جميع انحاء الوطن العربى </span>
+                                                </td>
+                                                <td>19K</td>
+                                                <td>14K</td>
+                                                <td>10K</td>
+                                                <td>
+                                                    <span class="m-l-10">
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                        <a href="javascript:void(0);"><i class="zmdi zmdi-star col-amber"></i></a>
+                                                        <a href="javascript:void(0);" style="color: black;"> <i
+                                                                class="zmdi zmdi-star-outline"></i> </a>
+                
+                                                    </span>
+                                                </td>
+                                            </tr>
+                
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row clearfix  tab-pane stretchLeft active "  id="view_module"  role="tabpanel">
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="card product_item">
+                                        <div class="body">
+                                            <div class="cp_img">
+                                                <img src="./images/offers/offer2.png" alt="Product" class="img-fluid">
+                                                <div class="hover">
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                             
+                                                </div>
+                                            </div>
+                                            <div class="product_details">
+                                                <h5><a href="">Simple Black Clock</a></h5>
+                                                <ul class="product_price list-unstyled">
+                                                    <li class="old_price">$16.00</li>
+                                                    <li class="new_price">$13.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="card product_item">
+                                        <div class="body">
+                                            <div class="cp_img">
+                                                <img src="./images/offers/offer7.jpeg" alt="Product" class="img-fluid">
+                                                <div class="hover">
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                             
+                                                </div>
+                                            </div>
+                                            <div class="product_details">
+                                                <h5><a href="#">Simple Black Clock</a></h5>
+                                                <ul class="product_price list-unstyled">
+                                                    <li class="old_price">$12.00</li>
+                                                    <li class="new_price">$11.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                             
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="card product_item">
+                                        <div class="body">
+                                            <div class="cp_img">
+                                                <img src="./images/offers/offer3.jpeg" alt="Product" class="img-fluid">
+                                                <div class="hover">
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                             
+                                                </div>
+                                            </div>
+                                            <div class="product_details">
+                                                <h5><a href="#">Simple Black Clock</a></h5>
+                                                <ul class="product_price list-unstyled">
+                                                    <li class="old_price">$16.00</li>
+                                                    <li class="new_price">$10.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="card product_item">
+                                        <div class="body">
+                                            <div class="cp_img">
+                                                <img src="./images/offers/offer5.jpeg" alt="Product" class="img-fluid">
+                                                <div class="hover">
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                             
+                                                </div>
+                                            </div>
+                                            <div class="product_details">
+                                                <h5><a href="#">Brone Lamp Glasses</a></h5>
+                                                <ul class="product_price list-unstyled">
+                                                    <li class="old_price">$18.00</li>
+                                                    <li class="new_price">$15.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="card product_item">
+                                        <div class="body">
+                                            <div class="cp_img">
+                                                <img src="./images/offers/offer4.jpeg" alt="Product" class="img-fluid">
+                                                <div class="hover">
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                             
+                                                </div>
+                                            </div>
+                                            <div class="product_details">
+                                                <h5><a href="#">Unero Small Bag</a></h5>
+                                                <ul class="product_price list-unstyled">
+                                                    <li class="old_price">$21.00</li>
+                                                    <li class="new_price">$17.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="card product_item">
+                                        <div class="body">
+                                            <div class="cp_img">
+                                                <img src="./images/offers/offer2.png" alt="Product" class="img-fluid">
+                                                <div class="hover">
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                             
+                                                </div>
+                                            </div>
+                                            <div class="product_details">
+                                                <h5><a href="#">Unero Round Sunglass</a></h5>
+                                                <ul class="product_price list-unstyled">
+                                                    <li class="old_price">$16.00</li>
+                                                    <li class="new_price">$10.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="card product_item">
+                                        <div class="body">
+                                            <div class="cp_img">
+                                                <img src="./images/offers/offer5.jpeg" alt="Product" class="img-fluid">
+                                                <div class="hover">
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                             
+                                                </div>
+                                            </div>
+                                            <div class="product_details">
+                                                <h5><a href="#">Wood Simple Clock</a></h5>
+                                                <ul class="product_price list-unstyled">
+                                                    <li class="old_price">$16.00</li>
+                                                    <li class="new_price">$10.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="card product_item">
+                                        <div class="body">
+                                            <div class="cp_img">
+                                                <img src="./images/offers/offer1.png" alt="Product" class="img-fluid">
+                                                <div class="hover">
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                             
+                                                </div>
+                                            </div>
+                                            <div class="product_details">
+                                                <h5><a href="#">Wood Long TV Board</a></h5>
+                                                <ul class="product_price list-unstyled">
+                                                    <li class="old_price">$16.00</li>
+                                                    <li class="new_price">$10.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                                
                             </div>
                         </div>
+
+                      
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane stretchLeft " id="ponts">
@@ -425,13 +597,7 @@
                         <div class="header">
                             <h2>نتيجة بحث <strong>النقاط</strong></h2>
                             <ul class="header-dropdown">
-                                <!--   <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                                                    <ul class="dropdown-menu slideUp float-right">
-                                                                        <li><a href="javascript:void(0);">Edit</a></li>
-                                                                        <li><a href="javascript:void(0);">Delete</a></li>
-                                                                        <li><a href="javascript:void(0);">Report</a></li>
-                                                                    </ul>
-                                                                </li> -->
+                              
                                 <li class="remove">
                                     <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
                                 </li>
@@ -447,13 +613,7 @@
                         <div class="header">
                             <h2>نتيجة بحث <strong>المعاملات</strong></h2>
                             <ul class="header-dropdown">
-                                <!--   <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                                                        <ul class="dropdown-menu slideUp float-right">
-                                                                            <li><a href="javascript:void(0);">Edit</a></li>
-                                                                            <li><a href="javascript:void(0);">Delete</a></li>
-                                                                            <li><a href="javascript:void(0);">Report</a></li>
-                                                                        </ul>
-                                                                    </li> -->
+                             
                                 <li class="remove">
                                     <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
                                 </li>
@@ -470,13 +630,7 @@
                         <div class="header">
                             <h2> تعديل <strong>البروفيل</strong></h2>
                             <ul class="header-dropdown">
-                                <!--   <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                                                        <ul class="dropdown-menu slideUp float-right">
-                                                                            <li><a href="javascript:void(0);">Edit</a></li>
-                                                                            <li><a href="javascript:void(0);">Delete</a></li>
-                                                                            <li><a href="javascript:void(0);">Report</a></li>
-                                                                        </ul>
-                                                                    </li> -->
+                               
                                 <li class="remove">
                                     <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
                                 </li>
@@ -543,7 +697,7 @@
     <!-- JQuery Library-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-1.11.1.min.js"></script>
-
+    <script src="js/popper.min.js"></script>
     <script src="./js/vendorscripts.js"></script>
 
     <script src="./js/mainscripts.js"></script>

@@ -1002,7 +1002,7 @@ background: #fff;
 .contact-us .left{line-height: 2em; float: left;}
 
 .contact-us span{font-size: 13px; color: #6C7A89; margin-left: 10px;}
-.contact-us .input-lg, .form-horizontal .form-group-lg .form-control {font-size: 13px; color:#6C7A89;}
+.contact-us .input-lg, .form-horizontal .form-group-lg .form-control {font-size: 13px; color:#6C7A89;text-align: right;}
 .contact-us  textarea{height: 108px;}
 .contact-us  .btn{background-color:#44ce6f; color: #fff; opacity: 0.8; }
 
