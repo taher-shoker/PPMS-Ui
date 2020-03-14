@@ -377,7 +377,7 @@ textarea{
   background-image: url(../images/login&registration/black-and-white.png);
   background-size: cover;
   background-repeat:no-repeat;
-  min-height: 600px;
+  min-height: 100vh;
   border-radius: 2px;
 }
 .pp-log{
@@ -431,6 +431,15 @@ hr.jst {
   font-size: 18px;
   font-weight: bold;
 }
+.m3ak{
+  color: #0083B0;
+  font-size: 20px;
+  font-weight: bold;
+  width:100%;
+  text-align: right;
+
+}
+
 /*********************************/
 /* Pop */
 @-webkit-keyframes hvr-pop {

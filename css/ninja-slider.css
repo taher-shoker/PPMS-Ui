@@ -28,7 +28,7 @@ strong{
 }
 .dec-offer{
     position: absolute;
-    height: 170px;
+    height: 200px;
     bottom: 0;
     color: #fff;
     z-index: 2;
@@ -40,12 +40,7 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 68%,rg
 text-align: right;
 padding: 10px 20px;
 }  
-.title-offer{
-width: 100%;
-font-size: 18px;
-text-transform: capitalize;
-padding: 10px 0;
-}
+.title-offer{width: 100%;font-size: 18px;text-transform: capitalize;padding: 10px;background-color: rgba(40, 43, 41, 0.57);}
 .rating-offer i{
     color: #fbcb0d;
     margin: 0 3px;
@@ -65,7 +60,7 @@ padding: 10px 0;
  .original-price {
     text-decoration: line-through;
     border: none !important;
-    color: #ddd;
+    color: #1b1a1a;
     font-size: 16px;
 }
 
