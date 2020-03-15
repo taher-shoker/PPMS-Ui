@@ -96,6 +96,20 @@
          window.location.replace('login.html')
         
       })
+  
+    $(document).ready(function() {
+        $("#types-ability").change(function() {
+    
+         
+            var selectedVal = $("#types-ability option:selected").val();
+         if (selectedVal == 4) {
+             $('.type-ability-txt').show()
+         }else{
+            $('.type-ability-txt').hide()
+         }
+    
+        });
+    });
 
 
 /*****/
