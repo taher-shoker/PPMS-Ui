@@ -20,15 +20,14 @@
                     email: true,
                    
                 },
+                image:{
+                    required: true,
+                },
                 pass: {
                     required: true,
                     minlength: 8
                 },
-                pass2: {
-                    required: true,
-                    minlength: 8,
-                    equalTo: '#pass'
-                }
+               
             },
             messages: {
                 firstName: {
@@ -47,10 +46,9 @@
                     required: "ادخل كلمة مرور لا تقل عن 8 حروف او ارقام",
                     minlength: "ادخل كلمة مرور لا تقل عن 8 حروف او ارقام"
                 },
-                pass2: {
-                    required: "اادخل كلمة مرور لا تقل عن 8 حروف او ارقام ",
-                    minlength: "ادخل كلمة مرور لا تقل عن 8 حروف او ارقام",
-                    equalTo: "ادخل كلمة مرور مشابهة",
+                image: {
+                    required: "ادخل صورة شخصية من اجل  التحقق من الهوية",
+                 
                 }
             }
         });
@@ -60,25 +58,13 @@
             'nextSelector': '.btn--next',
             'nextSelector': '.btn--next',
             'previousSelector': '.btn--back',
-           /*  'onNext': function(tab, navigation, index) {
-                var $valid = $("#js-wizard-form").valid();
-                if(!$valid) {
-                    $validator.focusInvalid();
-                    return false;
-                }
-            }, */
-          /*   onTabShow: function (tab, navigation, index) {
-                var $total = navigation.find('li').length;
-                var $current = index + 1;
-                var $percent = ($current / $total) * 100;
-                $('.tab-list').find('.tab-list__item').css({width: $percent-.5 + '%'});
-            }, */
+          
             onNext: function(tab, navigation, index) {
-                var $valid = $("#js-wizard-form").valid();
+              /*   var $valid = $("#js-wizard-form").valid();
                 if(!$valid) {
                     $validator.focusInvalid();
                     return false;
-                }
+                } */
               },
            /*  'onNext': function(tab, navigation, index){
               

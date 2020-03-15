@@ -127,19 +127,19 @@
                                         <li class="tab-list__item active">
                                             <a class="tab-list__link" href="#tab1" data-toggle="tab">
                                                 <span class="step">1</span>
-                                                <span class="desc">بيانات شخصية</span>
+                                                <span class="desc">المرحلة الاولى </span>
                                             </a>
                                         </li>
                                         <li class="tab-list__item">
                                             <a class="tab-list__link" href="#tab2" data-toggle="tab">
                                                 <span class="step">2</span>
-                                                <span class="desc">بيانات عامة</span>
+                                                <span class="desc">المرحلة الثانية</span>
                                             </a>
                                         </li>
                                         <li class="tab-list__item">
                                             <a class="tab-list__link" href="#tab3" data-toggle="tab">
                                                 <span class="step">3</span>
-                                                <span class="desc">بيانات فرعية</span>
+                                                <span class="desc"> المرحلة الاخيرة</span>
                                             </a>
                                         </li>
                                        <!--  <li class="tab-list__item">
@@ -153,12 +153,7 @@
                                     <div class="tab-content">
                                        
                                             <div class="tab-pane active" id="tab1">
-                                                <!--  <div class="form">
-                                                     <div class="input-group">
-                                                         <input class="input--style-1" type="text" name="username" placeholder="Username here" required="required">
-                                                         <a class="btn--next" href="#">next step</a>
-                                                     </div>
-                                                 </div> -->
+                                             
                                                  <div class="row">
                                                      <div class="col-md-6">
                                                          <div class="form">
@@ -190,16 +185,17 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form">
-                                                            <label for="pass">كلمة المرور *</label>
-                                                            <input type="password" class="input--style-1"  name="pass" id="pass" placeholder="كلمة المرور" required="required" autocomplete="off">
+                                                            <label for="">صورة شخصية *</label>
+                                                            <input type="file" class="input--style-1"  name="image"accept="image/png,image/jpg,image/jpeg">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form">
-                                                            <label for="pass2">تأكيد كلمة المرور *</label>
-                                                            <input type="password" class="input--style-1" id="pass2" name="pass2" placeholder="تأكيد كلمةالمرور" required='required'>
+                                                            <label for="pass">كلمة المرور *</label>
+                                                            <input type="password" class="input--style-1"  name="pass" id="pass" placeholder="كلمة المرور" required="required" autocomplete="off">
                                                         </div>
                                                     </div>
+                                                   
                                                 </div>
                                                 <a class="btn--next" href="#">التالى</a>
                                                 <a class="btn left-btn" href="login.html">تسجيل الدخول</a>
@@ -222,28 +218,38 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form">
-                                                            <label for="national-id">المحافظة</label>
-                                                            <input type="text" class="input--style-1"  name="national-id" id="national-id" placeholder="الرقم القومى" autocomplete="off">
+                                                            <label for="">المحافظة</label>
+                                                           <select class="input--style-1" name="" >
+                                                               <option value="">القاهرة</option>
+                                                               <option value="">الجيزة</option>
+                                                               <option value="">الاسكندرية</option>
+                                                               <option value="">طنطا</option>
+                                                           </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form">
-                                                            <label for="birth">المدينة</label>
-                                                            <input type="date" class="input--style-1" id="birth" name="data" >
+                                                            <label for="">المدينة</label>
+                                                            <input type="text" class="input--style-1"name="" >
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form">
-                                                            <label for="national-id">الوظيفة</label>
-                                                            <input type="text" class="input--style-1"  name="national-id" id="national-id" placeholder="الرقم القومى" autocomplete="off">
+                                                            <label for="">الوظيفة</label>
+                                                            <input type="text" class="input--style-1"  placeholder="الوظيفة" autocomplete="off" >
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form">
-                                                            <label for="birth">الحالة الاجتماعية</label>
-                                                            <input type="date" class="input--style-1" id="birth" name="data" >
+                                                            <label for="">الحالة الاجتماعية</label>
+                                                           <select class="input--style-1" name="">
+                                                               <option value="">أعرب</option>
+                                                               <option value="">متزوج</option>
+                                                               <option value="">مطلق</option>
+                                                               <option value="">أرمل</option>
+                                                           </select>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -257,11 +263,26 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="form">
-                                                            <label for="national-id">هل تعانى من اى امراض</label>
-                                                            <input type="text" class="input--style-1"  name="national-id" id="national-id" placeholder="الرقم القومى" autocomplete="off">
+                                                            <label for=""> هل تعانى من اى امراض مزمنة</label>
+                                                            <input type="checkbox" class=""  name="">
                                                         </div>
                                                     </div>
+                                                 
                                                    
+                                                </div>
+                                                <div class="row  mt-30">
+                                                   <!--  <div class="col-md-6">
+                                                        <div class="form">
+                                                            <label for="">شرح نوع المرض </label>
+                                                            <textarea  class="input--style-1"  placeholder="الوظيفة" ></textarea>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="offset-md-6 col-md-6">
+                                                        <div class="form">
+                                                            <label for="">ملف التشخيص</label>
+                                                            <input type="file"  class="input--style-1"  >
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                  
                                                 <a class="btn--back left-btn" href="#">رجوع</a>
