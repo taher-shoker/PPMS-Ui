@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/profileUser.css">
     <link rel="stylesheet" href="./css/color_skins.css">
     <link rel="stylesheet" href="./css/rtl.css">
+    
+
 </head>
 
 <body class="theme-green rtl">
@@ -625,30 +627,203 @@
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane stretchLeft " id="usersettings">
-                    <div class="card">
-            
-                        <div class="header">
-                            <h2> تعديل <strong>البروفيل</strong></h2>
-                            <ul class="header-dropdown">
-                               
-                                <li class="remove">
-                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
-                                </li>
-                            </ul>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="page-wrapper bg-img-1 p-t-275 p-b-100">
+                                    <div class="wrapper wrapper--w820">
+                                        <div class="card card-1">
+                                            <div class="card-heading">
+                                                <h2 class="title">إنشاء حساب جديد</h2>
+                                            </div>
+                                            <div class="card-body">
+                                                <form class="wizard-container" method="POST" action="#" id="js-wizard-form">
+                                                    <ul class="tab-list ">
+                                                        <li class="tab-list__item active">
+                                                            <a class="tab-list__link" href="#tab1" data-toggle="tab">
+                                                                <span class="step">1</span>
+                                                                <span class="desc">المرحلة الاولى </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="tab-list__item">
+                                                            <a class="tab-list__link" href="#tab2" data-toggle="tab">
+                                                                <span class="step">2</span>
+                                                                <span class="desc">المرحلة الثانية</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="tab-list__item">
+                                                            <a class="tab-list__link" href="#tab3" data-toggle="tab">
+                                                                <span class="step">3</span>
+                                                                <span class="desc"> المرحلة الاخيرة</span>
+                                                            </a>
+                                                        </li>
+                                                       <!--  <li class="tab-list__item">
+                                                            <a class="tab-list__link" href="#tab4" data-toggle="tab">
+                                                                <span class="step">4</span>
+                                                                <span class="desc">Confirm Pas...</span>
+                                                            </a>
+                                                        </li> -->
+                                                    </ul>
+                                                <div class="container">
+                                                    <div class="tab-content">
+                                                       
+                                                            <div class="tab-pane active" id="tab1">
+                                                             
+                                                                 <div class="row">
+                                                                     <div class="col-md-12">
+                                                                         <div class="form">
+                                                                             <label for="first-name">الاسم  *</label>
+                                                                             <input type="text" class="input--style-1"  name="firstName" id="first-name" placeholder="الاسم " required="required" autocomplete="off">
+                                                                         </div>
+                                                                     </div>
+                                                                     
+                                                                 </div>
+                                                                 <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="email">البريد الالكترونى *</label>
+                                                                            <input type="email" class="input--style-1"  name="email" id="email" placeholder="البريد الالكترونى" required="required" autocomplete="off">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="last-name">رقم الهاتف</label>
+                                                                            <input type="text" class="input--style-1" id="phone" name="phone" placeholder="رقم الهاتف">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="">صورة شخصية *</label>
+                                                                            <input type="file" class="input--style-1"  name="image"accept="image/png,image/jpg,image/jpeg">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="pass">كلمة المرور *</label>
+                                                                            <input type="password" class="input--style-1"  name="pass" id="pass" placeholder="كلمة المرور" required="required" autocomplete="off">
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                                <a class="btn--next" href="#">التالى</a>
+                                                                <a class="btn left-btn" href="login.html">تسجيل الدخول</a>
+                                                             </div>
+                                                             <div class="tab-pane" id="tab2">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="national-id">الرقم القومى</label>
+                                                                            <input type="text" class="input--style-1"  name="national-id" id="national-id" placeholder="الرقم القومى" autocomplete="off">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="birth">تاريخ الميلاد</label>
+                                                                            <input type="date" class="input--style-1" id="birth" name="data" >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="">المحافظة</label>
+                                                                          <select class="input--styl" name="" >
+                                                                            <option value="" selected disabled>اختر المحافظة</option>
+                                                                               <option value="">القاهرة</option>
+                                                                               <option value="">الجيزة</option>
+                                                                               <option value="">الاسكندرية</option>
+                                                                               <option value="">طنطا</option>
+                                                                           </select> 
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="">المدينة</label>
+                                                                            <input type="text" class="input--style-1"name="" >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="">الوظيفة</label>
+                                                                            <input type="text" class="input--style-1"  placeholder="الوظيفة" autocomplete="off" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="">الحالة الاجتماعية</label>
+                                                                           <select class="input--styl" name="">
+                                                                            <option value="" selected disabled>الحالة</option>
+                                                                               <option value="">أعزب</option>
+                                                                               <option value="">متزوج</option>
+                                                                               <option value="">مطلق</option>
+                                                                               <option value="">أرمل</option>
+                                                                           </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                 
+                                                                 
+                                                                     <a class="btn--back left-btn" href="#">رجوع</a>
+                                                                     <a class="btn--next" href="#">التالى</a>
+                                                                 
+                                                             </div>
+                                                             <div class="tab-pane" id="tab3">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form">
+                                                                            <label for=""> هل تعانى من اى امراض مزمنة</label>
+                                                                            <input type="checkbox" class=""  name="">
+                                                                        </div>
+                                                                    </div>
+                                                                 
+                                                                   
+                                                                </div>
+                                                                <div class="row  mt-30">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for=""> نوع الاعاقة</label>
+                                                                           <select name="" id="types-ability" class="input--styl">
+                                                                               <option value="1">بصرى</option>
+                                                                               <option value="2">سمعى</option>
+                                                                               <option value="3">ذهنية</option>
+                                                                               <option value="4">اخرى</option>
+                                                                           </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form">
+                                                                            <label for="">ملف التشخيص</label>
+                                                                            <input type="file"  class="input--style-1"  >
+                                                                        </div>
+                                                                    </div>
+                                                                 
+                                                                     <div class="offset-md-6 col-md-6">
+                                                                        <div class="form type-ability-txt">
+                                                                            <label for="">شرح نوع المرض </label>
+                                                                            <textarea  class="input--style-1"  placeholder="الوصف" ></textarea>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                                 
+                                                                <a class="btn--back left-btn" href="#">رجوع</a>
+                                                                <a class="btn--next btn-finish" href="#">انهاء</a>
+                                                             </div>
+                                                            
+                                                    </div>
+                                                      
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="body">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="الاسم">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="كلمة المرور الحالية ">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="كلمة مرور جديدة">
-                            </div>
-                            <button class="btn btn-info btn-round">حفظ التعديلات</button>
-                        </div>
-                    </div>
+                    </div> 
                 </div>
             
             </div>
@@ -701,11 +876,13 @@
     <script src="./js/vendorscripts.js"></script>
 
     <script src="./js/mainscripts.js"></script>
-
+    <script src="./js/jquery.steps.js"></script>
     <script src="./js/wow.min.js"></script>
     <!-- My Js Bootstrap-->
+    <script src="./js/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="./js/jquery-validate/jquery.validate.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/bootstrap-wizard/bootstrap.min.js"></script>
     <script src="./js/profile.js"></script>
 </body>
 

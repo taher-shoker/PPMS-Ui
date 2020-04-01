@@ -25,13 +25,13 @@
     width: 20px;
     bottom: -43%;
 }
-.mt-30{
+.wrapper .mt-30{
   margin-top: 30px;
 }
-.type-ability-txt{
+.wrapper .type-ability-txt{
   display: none;
 }
-a:hover, a:focus {
+.wrapper a:hover, a:focus {
   color: #fff;
   text-decoration: none;
 }
