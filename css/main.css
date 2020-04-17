@@ -180,38 +180,7 @@ p:last-child {
   width: 50%;
 }
 
-/*form control*/
-/* .form-group {
-  margin-bottom: 18px;
-}
 
-label {
-  color: #0e314c;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.form-control {
-  height: 45px;
-  padding: 10px;
-  font-size: 14px;
-  color: #0e314c;
-  border: 1px solid #eeeeee;
-  border-radius: 0;
-  background: #eeeeee;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.form-control:focus {
-  outline: 0;
-  background: #ffffff;
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
-  border-color: #44ce6f;
-}
- */
 /*Section Title*/
 .section-title {
   text-align: center;
@@ -865,7 +834,7 @@ background: #fff;
   transform: translateY(5px);
   
 }     
-.works .nav-link .active { background-color: #44ce6f !important;color: #fff;}          
+.works .nav-link.active { background-color: #44ce6f !important;color: #fff;}          
 
 
 .works .btn { background-color: #fff; border: 1px solid #eee; color: #4895C2; width: 100px; margin-top: 20px;
