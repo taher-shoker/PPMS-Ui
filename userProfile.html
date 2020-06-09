@@ -16,7 +16,28 @@
     <link rel="stylesheet" href="./css/profileUser.css">
     <link rel="stylesheet" href="./css/color_skins.css">
     <link rel="stylesheet" href="./css/rtl.css">
-    
+    <style>
+        #loading {
+            pointer-events: none;
+    width: 2.5em;
+    height: 2.5em;
+    border: 3px solid transparent;
+    border-color: #eee;
+    border-top-color: #5cdb94;
+    border-radius: 50%;
+    animation: loadingspin 1s linear infinite;
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+}
+
+
+@keyframes loadingspin {
+	100% {
+			transform: rotate(360deg)
+	}
+}
+    </style>
 
 </head>
 
@@ -216,7 +237,7 @@
     <section class="content">
         <div class="block-header">
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" style="position: relative;">
 
 
 
@@ -293,7 +314,10 @@
 
             </ul>
 
-            <div class="tab-content">
+            <!-- Loading spinner -->
+            <div id="loading"></div>
+            <!-- content -->
+             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane stretchLeft  " id="network">
                     <div class="card">
                         <div class="header">
@@ -657,12 +681,7 @@
                                                                 <span class="desc"> المرحلة الاخيرة</span>
                                                             </a>
                                                         </li>
-                                                       <!--  <li class="tab-list__item">
-                                                            <a class="tab-list__link" href="#tab4" data-toggle="tab">
-                                                                <span class="step">4</span>
-                                                                <span class="desc">Confirm Pas...</span>
-                                                            </a>
-                                                        </li> -->
+                                                       
                                                     </ul>
                                                 <div class="container">
                                                     <div class="tab-content">
@@ -827,7 +846,7 @@
                 </div>
             
             </div>
-
+ 
 
 
         </div>
